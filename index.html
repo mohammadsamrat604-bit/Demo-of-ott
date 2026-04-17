@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamFlix - OTT Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">StreamFlix</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="profile.html">Profile</a>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input id="searchInput" onkeyup="searchMovies()" type="text" placeholder="Search...">
+      </div>
+
+      <a href="login.html"><button class="btn btn-login">Login</button></a>
+      <a href="signup.html"><button class="btn btn-signup">Sign Up</button></a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Unlimited Movies, Shows & Originals</h1>
+      <p>
+        Watch premium movies, trending series and exclusive content in 4K quality.
+        Experience the future of entertainment with StreamFlix.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn btn-play" onclick="window.location.href='watch.html'">▶ Play</button>
+        <button class="btn btn-info" onclick="window.location.href='movies.html'">More Info</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🔥 Trending Now</h2>
+    <div class="row">
+      <div class="card" data-name="Avengers" onclick="openDetails('Avengers Endgame','https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=500&q=80')">
+        <span class="tag">Trending</span>
+        <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=500&q=80">
+      </div>
+
+      <div class="card" data-name="Batman" onclick="openDetails('Batman Dark Knight','https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80')">
+        <span class="tag">New</span>
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80">
+      </div>
+
+      <div class="card" data-name="Joker" onclick="openDetails('Joker','https://images.unsplash.com/photo-1522120692538-0eae50b6cba4?auto=format&fit=crop&w=500&q=80')">
+        <span class="tag">Top</span>
+        <img src="https://images.unsplash.com/photo-1522120692538-0eae50b6cba4?auto=format&fit=crop&w=500&q=80">
+      </div>
+
+      <div class="card" data-name="Cinema" onclick="openDetails('Cinema Premium','https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?auto=format&fit=crop&w=500&q=80')">
+        <span class="tag">Hot</span>
+        <img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?auto=format&fit=crop&w=500&q=80">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎬 Action Movies</h2>
+    <div class="row">
+      <div class="card" data-name="Action One" onclick="openDetails('Action One','https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80')">
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80">
+      </div>
+
+      <div class="card" data-name="Action Two" onclick="openDetails('Action Two','https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=500&q=80')">
+        <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=500&q=80">
+      </div>
+
+      <div class="card" data-name="Action Three" onclick="openDetails('Action Three','https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80')">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>StreamFlix</h3>
+        <p>Premium OTT platform design. Watch movies, series & originals with high-quality streaming experience.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="series.html">Series</a>
+        <a href="profile.html">Profile</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+
+    <div class="copy">
+      © 2026 StreamFlix. All Rights Reserved.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
